@@ -3,11 +3,11 @@
     <v-footer padless absolute dark color="grey darken-3" app>
       <v-card flat color="grey darken-3" class="flex">
         <v-card-title class="font-weight-light px-10">
-        Follow me on social media!
-        <v-spacer></v-spacer>
+          <v-row justify="center">
         <v-btn v-for="icon in icons" :key="icon" v-bind:href="icon.link" class="mx-4" dark icon>
           <v-icon size="24px">{{ icon.icon }}</v-icon>
         </v-btn>
+</v-row>
         </v-card-title>
 
         <v-card-text  class="grey darken-4 font-weight-thin py-4 text-center white--text">
